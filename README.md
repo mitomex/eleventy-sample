@@ -48,3 +48,7 @@ package.json を
 ```
 
 に変更
+
+About.md を追加。
+
+生成されるページは `about.html` ではなく `about/index.html` になる。
