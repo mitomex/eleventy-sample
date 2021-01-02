@@ -52,3 +52,13 @@ package.json を
 About.md を追加。
 
 生成されるページは `about.html` ではなく `about/index.html` になる。
+
+front matter に `permalink` を設定すると出力先を指定できる。
+
+```yaml
+---
+permalink: contact.html
+---
+```
+
+など。
