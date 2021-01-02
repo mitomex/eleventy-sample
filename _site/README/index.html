@@ -16,3 +16,15 @@
 <p>で</p>
 <pre><code class="language-shell">npm run build
 </code></pre>
+<p>開発用サーバーの起動は</p>
+<pre><code class="language-shell">eleventy --serve
+</code></pre>
+<p>package.json を</p>
+<pre><code class="language-json">{
+  &quot;scripts&quot;: {
+    &quot;build&quot;: &quot;eleventy&quot;,
+    &quot;serve&quot;: &quot;eleventy --serve&quot;
+  }
+}
+</code></pre>
+<p>に変更</p>

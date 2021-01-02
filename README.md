@@ -29,3 +29,22 @@ package.json に追加して実行する場合
 ```shell
 npm run build
 ```
+
+開発用サーバーの起動は
+
+```shell
+eleventy --serve
+```
+
+package.json を
+
+```json
+{
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  }
+}
+```
+
+に変更
