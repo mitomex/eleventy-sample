@@ -13,6 +13,7 @@ title: デフォルトのタイトル
   <title>{{ title }} - {{ metadata.sitename }}</title>
 </head>
 <body>
+{% include './header.njk' %}
 {{ content | safe }}
 </body>
 </html>
