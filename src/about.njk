@@ -8,9 +8,11 @@ medias:
 ---
 <h1>{{ title }}</h1>
 <ul>
-  {% for media in medias %}
-    <li><a href="{{ media.url }}">{{ media.name }}</a></li>
-    {% else %}
+  {%- for media in medias %}
+    <li>
+      <a href="{{ media.url }}">{{ media.name }}</a>
+    </li>
+    {%- else %}
     <li>No media</li>
-  {% endfor %}
+  {%- endfor %}
 </ul>
