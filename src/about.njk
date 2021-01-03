@@ -1,0 +1,16 @@
+---
+title: Aboutページ
+medias:
+  - name: Twitter
+    url: https://www.twitter.com/mitomex
+  - name: Instagram
+    url: https://www.instagram.com/mitomex
+---
+<h1>{{ title }}</h1>
+<ul>
+  {% for media in medias %}
+    <li><a href="{{ media.url }}">{{ media.name }}</a></li>
+    {% else %}
+    <li>No media</li>
+  {% endfor %}
+</ul>
