@@ -1,0 +1,16 @@
+---
+pagination:
+  data: works
+  size: 1
+---
+<ul>
+  <li>Name: {{ pagination.items[0].name }}</li>
+  <li>Category: {{ pagination.items[0].category }}</li>
+</ul>
+
+{% if pagination.href.previous %}
+  <a href="{{ pagination.href.previous }}">前へ</a>
+{% endif %}
+{% if pagination.href.next %}
+  <a href="{{ pagination.href.next }}">次へ</a>
+{% endif %}
