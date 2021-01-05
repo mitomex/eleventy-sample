@@ -2,11 +2,12 @@
 pagination:
   data: works
   size: 1
-permalink: "works/{{ pagination.items[0].name | slug }}/"
+  alias: work
+permalink: "works/{{ work.name | slug }}/"
 ---
 <ul>
-  <li>Name: {{ pagination.items[0].name }}</li>
-  <li>Category: {{ pagination.items[0].category }}</li>
+  <li>Name: {{ work.name }}</li>
+  <li>Category: {{ work.category }}</li>
 </ul>
 
 {% if pagination.href.previous %}
