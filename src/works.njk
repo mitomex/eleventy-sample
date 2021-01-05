@@ -2,6 +2,7 @@
 pagination:
   data: works
   size: 1
+permalink: "works/{{ pagination.items[0].name | slug }}/"
 ---
 <ul>
   <li>Name: {{ pagination.items[0].name }}</li>
