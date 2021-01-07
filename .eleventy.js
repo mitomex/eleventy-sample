@@ -9,6 +9,8 @@ module.exports = function(eleventyConfig) {
     return dayjs(dateObj).format('YYYY年M月D日');
   });
 
+  eleventyConfig.addPassthroughCopy("src/assets")
+
   return {
     dir: {
       input: "src",
