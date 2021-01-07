@@ -1,0 +1,9 @@
+---
+title: ニュース一覧
+---
+<h1>{{ title }}</h1>
+<ul>
+  {% for item in collections.news %}
+    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+  {% endfor %}
+</ul>
