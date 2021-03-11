@@ -4,7 +4,7 @@ module.exports = () => {
   return {
     medias: [
       {
-        name: "Twitter",
+        name: "Twitter ID",
         url: `https://www.twitter.com/${baseAccount}`
       },
       {
